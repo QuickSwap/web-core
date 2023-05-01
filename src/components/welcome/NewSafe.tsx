@@ -61,7 +61,7 @@ const NewSafe = () => {
             color="static.main"
             mb={1}
           >
-            Welcome to the Safe
+            Welcome to the QuickSafe
           </Typography>
 
           <Typography mb={5} color="static.main">
