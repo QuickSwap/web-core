@@ -63,7 +63,7 @@ describe('The Safe Apps list', () => {
       cy.intercept('GET', 'https://my-valid-custom-app.com/manifest.json', {
         name: 'My Custom App',
         description: 'My Custom App Description',
-        icons: [{ src: 'logo.svg', sizes: 'any', type: 'image/svg+xml' }],
+        icons: [{ src: 'logo.png', sizes: 'any', type: 'image/svg+xml' }],
       })
 
       cy.findByLabelText(/app url/i)

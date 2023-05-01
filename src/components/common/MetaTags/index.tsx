@@ -4,7 +4,7 @@ import { lightPalette, darkPalette } from '@safe-global/safe-react-components'
 
 const descriptionText =
   'Safe (prev. Gnosis Safe) is the most trusted platform to manage digital assets on Ethereum and multiple EVMs. Over $40B secured.'
-const titleText = 'Safe'
+const titleText = 'zkEVM Safe UI'
 
 const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
   <>
@@ -15,7 +15,7 @@ const MetaTags = ({ prefetchUrl }: { prefetchUrl: string }) => (
     <meta name="og:description" content={descriptionText} />
     <meta name="og:title" content={titleText} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@safe" />
+    <meta name="twitter:site" content="@QuickswapDEX" />
     <meta name="twitter:title" content={titleText} />
     <meta name="twitter:description" content={descriptionText} />
     <meta name="twitter:image" content="https://app.safe.global/images/social-share.png" />
