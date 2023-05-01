@@ -3,7 +3,7 @@
   "homepage": "https://github.com/QuickSwap/web-core",
   "license": "GPL-3.0",
   "type": "module",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "scripts": {
     "dev": "next dev",
     "start": "next dev",
