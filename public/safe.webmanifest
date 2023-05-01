@@ -1,7 +1,7 @@
 {
-  "name": "Gnosis zkEVM UI",
+  "name": "QuickSafe zkEVM UI",
   "short_name": "gnosis zkevm ui",
-  "description": "Safe (prev. Gnosis Safe) is the most trusted platform to manage digital assets on Ethereum and multiple EVMs. Over $40B secured.",
+  "description": "QuickSafe (Forked from Gnosis Safe) is a platform to manage digital assets on ZKEVM.",
   "icons": [
     {
       "src": "/favicons/android-icon-192x192.png",
