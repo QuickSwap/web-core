@@ -84,6 +84,11 @@
   color: #162d45;
 }
 
+wcm-modal {
+  z-index: 10000;
+  position: relative;
+}
+
 #walletconnect-wrapper .walletconnect-modal__footer {
   flex-wrap: wrap;
   gap: 5px;
