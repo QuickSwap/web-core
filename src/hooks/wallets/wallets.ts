@@ -1,4 +1,4 @@
-import { CYPRESS_MNEMONIC, TREZOR_APP_URL, TREZOR_EMAIL, WC_BRIDGE } from '@/config/constants'
+import { CYPRESS_MNEMONIC, TREZOR_APP_URL, TREZOR_EMAIL } from '@/config/constants'
 import { type RecommendedInjectedWallets, type WalletInit } from '@web3-onboard/common/dist/types.d'
 import type { ChainInfo } from '@safe-global/safe-gateway-typescript-sdk'
 
@@ -41,7 +41,12 @@ export const CGW_NAMES: { [key in WALLET_KEYS]: string | undefined } = {
 const WALLET_MODULES: { [key in WALLET_KEYS]: () => WalletInit } = {
   [WALLET_KEYS.INJECTED]: injectedWalletModule,
   [WALLET_KEYS.PAIRING]: pairingModule,
-  [WALLET_KEYS.WALLETCONNECT]: () => walletConnect({ bridge: WC_BRIDGE }),
+  [WALLET_KEYS.WALLETCONNECT]: () =>
+    walletConnect({
+      projectId: 'a6cc11517a10f6f12953fd67b1eb67e7',
+      requiredChains: [1],
+      optionalChains: [137, 2000, 1101],
+    }),
   [WALLET_KEYS.LEDGER]: ledgerModule,
   [WALLET_KEYS.TREZOR]: () => trezorModule({ appUrl: TREZOR_APP_URL, email: TREZOR_EMAIL }),
   [WALLET_KEYS.KEYSTONE]: keystoneModule,
