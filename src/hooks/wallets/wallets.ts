@@ -44,8 +44,7 @@ const WALLET_MODULES: { [key in WALLET_KEYS]: () => WalletInit } = {
   [WALLET_KEYS.WALLETCONNECT]: () =>
     walletConnect({
       projectId: 'a6cc11517a10f6f12953fd67b1eb67e7',
-      requiredChains: [1],
-      optionalChains: [137, 2000, 1101],
+      requiredChains: [1, 137, 1101],
     }),
   [WALLET_KEYS.LEDGER]: ledgerModule,
   [WALLET_KEYS.TREZOR]: () => trezorModule({ appUrl: TREZOR_APP_URL, email: TREZOR_EMAIL }),
